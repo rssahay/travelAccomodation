@@ -1,0 +1,17 @@
+{
+    "users":[{
+        "username": "xyz",
+        "password" : "xyz",
+        "role":"Admin"
+    },
+    {
+        "username": "qwe",
+        "password" : "qwe",
+        "role":"webuser"
+    },
+    {
+        "username": "asd",
+        "password" : "asd",
+        "role":"guestuser"
+    }]
+}

@@ -1,0 +1,35 @@
+
+
+<div class="cardblock">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Search Hotel</h2>
+            <form [formGroup]="hotelSearch">
+                <div class=" mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">City : </label>
+                    <input type="text" class="form-control" formControlName="city">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">CheckIn : </label>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="checkin">
+                        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                        <mat-datepicker #picker></mat-datepicker>
+                    </mat-form-field>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">CheckOut : </label>
+                    <mat-form-field>
+                        <input matInput [matDatepicker]="picker2" placeholder="Choose a date" formControlName="checkout">
+                        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                        <mat-datepicker #picker2></mat-datepicker>
+                    </mat-form-field>
+                </div>
+            </form>
+
+            <button type="button" class="btn btn-primary" (click)="searchHotels()">Search</button>
+
+        </div>
+    </div>
+
+</div>

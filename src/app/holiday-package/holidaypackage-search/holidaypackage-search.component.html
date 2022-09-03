@@ -1,0 +1,35 @@
+<div class="cardblock">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Search Holiday Packages</h2>
+            <form [formGroup]="vaccationFormSearch">
+                <div class=" mb-3">
+                    <label for="from" class="form-label">From : </label>
+                    <input type="text" class="form-control" formControlName="from">
+                </div>
+                <div class=" mb-3">
+                    <label for="to" class="form-label">To : </label>
+                    <input type="text" class="form-control" formControlName="to">
+                </div>
+            </form>
+            <button type="button" class="btn btn-primary" (click)="searchPackages()">Search</button>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div *ngFor="let item of vaccationRecords">
+        <div class="card"  (click)="bookethePackage()">
+            <div class="card-body">
+                <label>{{item.to}}</label><br>
+                <label>{{item.flights}}</label><br>
+                <label>{{item.to}}</label><br>
+                <label>{{item.Price}}</label><br>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<router-outlet></router-outlet>

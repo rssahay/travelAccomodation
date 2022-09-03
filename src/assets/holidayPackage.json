@@ -1,0 +1,56 @@
+{
+    "packages":[{
+        "from": "mumbai",
+        "to": "goa",
+        "duration" : "6N",
+        "flights" : 1,
+        "hotel" : 2,
+        "Activities" : 5,
+        "Price": 50000
+    },
+    {
+        "from": "mumbai",
+        "to": "goa",
+        "duration" : "10N",
+        "flights" : 1,
+        "hotel" : 2,
+        "Activities" : 3,
+        "Price": 75000
+    },
+    {
+        "from": "mumbai",
+        "to": "goa",
+        "duration" : "6N",
+        "flights" : 1,
+        "hotel" : 2,
+        "Activities" : 5,
+        "Price": 50000
+    },
+    {
+        "from": "mumbai",
+        "to": "dubai",
+        "duration" : "6N",
+        "flights" : 1,
+        "hotel" : 2,
+        "Activities" : 5,
+        "Price": 80000
+    },
+    {
+        "from": "mumbai",
+        "to": "thailand",
+        "duration" : "6N",
+        "flights" : 1,
+        "hotel" : 2,
+        "Activities" : 5,
+        "Price": 100000
+    },
+    {
+        "from": "delhi",
+        "to": "goa",
+        "duration" : "6N",
+        "flights" : 1,
+        "hotel" : 2,
+        "Activities" : 5,
+        "Price": 80000
+    }]
+}

@@ -1,0 +1,15 @@
+<div >Login 
+    <form [formGroup]="userDetails">
+        <div>
+            <label for="userName">UserName</label>
+            <input class="form-control" name="userName" formControlName="userName" >
+        </div>
+      
+        <div>
+            <label >Password</label>
+            <input class="form-control" name="password" formControlName="password"  >
+        </div>
+
+    </form>
+    <button (click)="SubmitUserDetails()" > Submit</button>
+</div>

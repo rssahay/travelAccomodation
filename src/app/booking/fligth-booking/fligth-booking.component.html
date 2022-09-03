@@ -1,0 +1,36 @@
+
+
+<div class="cardblock">
+    <div class="card">
+        <div class="card-body">
+            <h2 class="card-title">Search Flights</h2>
+            <form [formGroup]="flightSearch">
+                <div class=" mb-3">
+                    <label for="from" class="form-label">From : </label>
+                    <input type="text" class="form-control" formControlName="from">
+                </div>
+                <div class=" mb-3">
+                  <label for="to" class="form-label">To : </label>
+                  <input type="text" class="form-control" formControlName="to">
+                </div>
+              
+                <div class="mb-3">
+                  <label for="travelDate" class="form-label">Travel Date : </label>
+                  <mat-form-field>
+                      <input matInput [matDatepicker]="picker" placeholder="Choose a date" formControlName="travelDate">
+                      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                      <mat-datepicker #picker></mat-datepicker>
+                  </mat-form-field>
+              </div>
+            </form>
+
+            <button type="button" class="btn btn-primary" (click)="searchFlights()">Search</button>
+
+        </div>
+    </div>
+
+</div>
+<router-outlet></router-outlet>
+
+
+
