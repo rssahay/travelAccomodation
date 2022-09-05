@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { LayoutComponent } from './layout/layout.component';
 import { LoginComponent } from './login/login.component';
+import { LogoutComponent } from './logout/logout.component';
 
 const routes: Routes = [{
   path:'', component:LoginComponent
@@ -18,7 +19,9 @@ const routes: Routes = [{
 },
 {
   path:'header', component:HeaderComponent
-},];
+},{
+  path: 'logout', component:LogoutComponent
+}];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

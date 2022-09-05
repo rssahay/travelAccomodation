@@ -11,6 +11,7 @@ import { HeaderComponent } from './header/header.component';
 import { DialogexampleComponent } from './dialogexample/dialogexample.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { LogoutComponent } from './logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     LayoutComponent,
     FooterComponent,
     HeaderComponent,
-    DialogexampleComponent
+    DialogexampleComponent,
+    LogoutComponent
   ],
   imports: [
     CommonModule,

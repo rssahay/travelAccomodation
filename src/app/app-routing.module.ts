@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LayoutComponent } from './core/layout/layout.component';
 import { LoginComponent } from './core/login/login.component';
+import { AutherizationGuard } from './guards/autherization.guard';
 
 // const routes: Routes = [{
 //   path:'',
@@ -23,9 +24,15 @@ const routes: Routes = [{
   }, {
     path: 'cabs',
     loadChildren: () => import('./cabs/cabs.module').then(m => m.CabsModule)
-  }, {
+  }, 
+  {
     path: 'package',
     loadChildren: () => import('./holiday-package/holiday-package.module').then(m => m.HolidayPackageModule)
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule),
+    canActivate:[AutherizationGuard]
   }]
 }]
 

@@ -34,9 +34,10 @@ export class LoginComponent implements OnInit {
       let userFound = userdetails.find(el => {
         return el.username == username && el.password == password;
       })
-
+      console.log("userfound", userFound)
       if (userFound) {
         sessionStorage.setItem('loggedInuser', 'true')
+        sessionStorage.setItem('role',userFound.role)
         this.dialog.closeAll();
       } else {
         alert('Please Enter correct username and password !')

@@ -2,7 +2,7 @@
     "users":[{
         "username": "xyz",
         "password" : "xyz",
-        "role":"Admin"
+        "role":["Admin","webuser"]
     },
     {
         "username": "qwe",
@@ -13,5 +13,10 @@
         "username": "asd",
         "password" : "asd",
         "role":"guestuser"
+    },
+    {
+        "username": "iop",
+        "password" : "iop",
+        "role":"Admin"
     }]
 }

@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 
 @Component({
@@ -9,7 +10,7 @@ import { LoginComponent } from '../login/login.component';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor( public dialog: MatDialog) { }
+  constructor( public dialog: MatDialog, public router:Router) { }
 
   ngOnInit(): void {
   }
@@ -17,5 +18,9 @@ export class HeaderComponent implements OnInit {
 
   clicktoLogin(){
     const dialogRef = this.dialog.open(LoginComponent);
+  }
+
+  clicktoLogout(){
+    this.router.navigateByUrl('logout')
   }
 }
